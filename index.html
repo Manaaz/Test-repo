@@ -1,7 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+   
     <link rel="stylesheet" href="style.css">
     
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -10,81 +19,68 @@
     <title>Shop</title>
 </head>
 <body>
-    
-    <script>
-        /* When the user clicks on the button, 
-        toggle between hiding and showing the dropdown content */
-        function myFunction() {
-            document.getElementById("myDropdown").classList.toggle("show");
-        }
-
-        // Close the dropdown if the user clicks outside of it
-        window.onclick = function(event) {
-          if (!event.target.matches('.dropbtn')) {
-
-            var dropdowns = document.getElementsByClassName("dropdown-content");
-            var i;
-            for (i = 0; i < dropdowns.length; i++) {
-              var openDropdown = dropdowns[i];
-              if (openDropdown.classList.contains('show')) {
-                openDropdown.classList.remove('show');
-              }
-            }
-          }
-        }
-    </script>
       
     <header>       
-        <nav>          
-            <div class="nav_left">
-                <a href="index.html"><img src="img/logo.svg" alt="logo"></a>
-                <a href="#"><img src="img/search.svg" alt="search"></a>
-            </div>
-            <div class="nav_right">
-                <a href="#" class="menu_a"><img src="img/profile.svg" alt="profile"></a>
-                <a href="#" class="menu_a"><img src="img/cart.svg" alt="cart"></a>                    
-                <a href="#" class="menu_a"><img src="img/Menu.svg" alt="Menu" onclick="myFunction()" class="icon_padding dropbtn"></a>
-                            
-                
-                
-                <div id="myDropdown" class="dropdown-content">
-                    
-                    <h2>MENU</h2>
-                    
-                    <ol>
-                        <li><h3>MAN</h3></li>
-                        <li><a href="#">Accessories</a></li>
-                        <li><a href="#">Bags</a></li>
-                        <li><a href="#">Denim</a></li>
-                        <li><a href="#">T-Shirts</a></li>
+        
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
 
-                        <li><h3>WOMAN</h3></li>
-                        <li><a href="#">Accessories</a></li>
-                        <li><a href="#">Jackets & Coats</a></li>
-                        <li><a href="#">Polos</a></li>
-                        <li><a href="#">T-Shirts</a></li>
-                        <li><a href="#">Shirts</a></li>
-                        
-                        <li><h3>KIDS</h3></li>
-                        <li><a href="#">Accessories</a></li>
-                        <li><a href="#">Jackets & Coats</a></li>
-                        <li><a href="#">Polos</a></li>
-                        <li><a href="#">T-Shirts</a></li>
-                        <li><a href="#">Shirts</a></li>
-                        <li><a href="#">Bags</a></li>                       
-                    </ol>
-                    
-                    
+            <div class="container work-space">  
+                 
+                <div class="nav-container-left">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="img/logo.svg" alt="logo"></a>
+                    <a class="navbar-nav" href="#">
+                        <img class="" src="img/search.svg" alt="search">
+                    </a>
                 </div>
+               
+                <div class="nav-container-right d-flex align-items-center">            
+                    
+                    <a href="#" class="navbar-img">
+                        <img src="img/profile.svg" alt="profile">
+                    </a> 
+                    
+                    <a href="#" class="navbar-img">
+                        <img src="img/cart.svg" alt="cart">
+                    </a> 
+                    
+                    <div class="float-sm-end"> 
+                        
+                        <button class="navbar-toggler" type="button">
+                        <img src="img/Menu.svg" alt="Menu" class="icon_padding dropbtn">
+                        </button>
+
+                        <div class="collapse navbar-collapse ">
+                            <ul class="navbar-nav me-auto mb-0 mb-lg-0">
                                
-            </div>           
-        </nav>      
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="dropdown07" data-bs-toggle="dropdown" aria-expanded="false"><span class="navbar-toggler-icon"></span></a>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdown07">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                
+                </div>
+                
+                 
+            </div>
+             
+          </nav>
+                   
     </header>
-    
-    <section class="content frame_1">
-
-            <img src="img/index_big_img.svg" alt="Рисунок в тексте">
-
+        
+    <section>
+       
+        <div class="frame_1">
+            
+            <img src="img/index_big_img.svg" alt="big_img">
+            
+                
             <div class="frame_1_text">
 
                 <div class="block_rectangle_pink"></div>
@@ -95,40 +91,47 @@
 
             </div>
 
-    </section>
-    <section class="small_items">
+        </div>
+        
+        <div class="small_items">
 
-       <div class="centered_content">
-        <a href="#">
-           <div class="item product cover">
-                <div class="item_text">
-                   <p>30% OFF</p>
-                   <h2>FOR WOMEN</h2>
-               </div>
-               <img src="img/category_women.jpg" alt="women">
+           <div class="small_items item ">
+                <a href="#">
+                   <div class="item cover">
+                        <div class="item_text">
+                           <p>30% OFF</p>
+                           <h2>FOR WOMEN</h2>
+                       </div>
+                       <img src="img/category_women.jpg" alt="women">
+                    </div>
+                </a>
             </div>
-        </a>
-        <a href="#">
-            <div class="item product cover">        
-               <div class="item_text">
-                   <p>HOT DEAL</p>
-                   <h2>FOR MEN</h2>
-               </div>
-               <img src="img/category_man.jpg" alt="man">               
+            <div class="small_items item ">
+                <a href="#">
+                   <div class="item cover">
+                        <div class="item_text">
+                           <p>HOT DEAL</p>
+                           <h2>FOR MEN</h2>
+                       </div>
+                       <img src="img/category_man.jpg" alt="man">
+                    </div>
+                </a>
             </div>
-        </a>
-        <a href="#"> 
-            <div class="item cover cover_last">                  
-               <div class="item_text item_text_last">
-                   <p>NEW ARRIVALS</p>
-                   <h2>FOR KIDS</h2>
-               </div>
-               <img src="img/category_kids.jpg" alt="kind">            
+            <div class="small_items item ">
+                <a href="#">
+                   <div class="item cover">
+                        <div class="item_text">
+                           <p>NEW ARRIVALS</p>
+                           <h2>FOR KIDS</h2>
+                       </div>
+                       <img src="img/category_kids.jpg" alt="kids">
+                    </div>
+                </a>
             </div>
-        </a>
-       </div>  
-    </section>
-    <section class="big_item content">
+                
+        </div>  
+           
+    <div class="big_item content">
         <div class="centered_content">
             <div class="item cover big_item_cover">
                 <a href="#">
@@ -140,14 +143,14 @@
                 </a>
             </div>
         </div> 
-    </section>
-    <section class="frame_featured_items centered_content clearfix">
+    </div>
+    <div class="frame_featured_items centered_content clearfix">
         <div class="">
             <h2>Fetured Items</h2>
             <p>Shop for items based on what we featured in this week</p>
         </div>
-    </section>
-    <section class="delivery_all">   
+    </div>
+    <div class="delivery_all">   
         <div class="centered_content">
             <div class="delivery">
                 
@@ -243,9 +246,10 @@
                 
             </div>
         </div>
-    </section>   
-    <section class="sub clearfix">
+    </div>   
+    <div class="sub clearfix">
         <input type="submit" value="Browse All Product">
+    </div>
     </section>
         
     <footer>

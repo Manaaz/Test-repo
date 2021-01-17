@@ -6,6 +6,153 @@
     font-family: Lato;
 }
 
+header{
+    width: 100%;
+}
+
+section{
+    max-width: 1600px;
+    margin: auto;
+}
+
+.work-space{
+    max-width: 1600px;
+}
+.nav-container-left{
+    float: left;  
+    display: flex;
+}
+.nav-container-left .navbar-nav a{
+    margin-left:41px;
+    position: relative;
+}
+
+.nav-container-left .navbar-nav img {
+    margin: auto;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+ }
+.navbar-img{
+    position: relative;
+}
+.navbar-img img {
+    margin: auto;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+  }
+
+.nav-container-right{    
+    float:right;
+}
+.nav-container-right a{
+    margin-right: 33px;
+}
+
+@media (min-width: 375px) {
+  .navbar-brand {
+    margin-left: 16px;
+  }
+}
+@media (min-width: 768px) {
+  .navbar-brand {
+    margin-left: 32px;
+  }
+}
+@media (min-width: 992px) {
+  .navbar-brand {
+    margin-left: 231px;
+  }
+}
+
+@media (min-width: 375px) {
+  .nav-container-right {
+    margin-right: 16px;
+  }
+}
+@media (min-width: 768px) {
+  .nav-container-right {
+    margin-right: 41px;
+  }
+}
+@media (min-width: 992px) {
+  .nav-container-right {
+    margin-right: 239px;
+  }
+}
+
+
+.frame_1{
+    max-width: 1600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.frame_1-work_space{
+    width:50%;
+}
+.frame_1-work_space img{
+    height:100%;
+    width:100%;
+}
+
+.frame-left{
+    position: relative;
+    float: left;
+    width:100%;
+}
+frame-right{
+    position: relative;
+    float: right;
+    width:50%;
+}
+.frame_1{
+    max-width:1600px;
+    background-color: #F1E4E6 ;
+    
+    margin-bottom: 20px;
+}
+
+.block_rectangle_pink{
+    position: relative;
+    width:12px;
+    height: 92px;
+    margin-top: 35%;
+    margin-left: 10%;
+    background: #F16D7F;
+}
+.frame_1_text h2 {
+    margin: 0;
+}
+.frame_1_text h3 {
+    margin: 0;
+}
+.frame_1_text .block_text{
+    margin-top:-86px;
+    margin-left: 15%;    
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 46px;
+    color: @standart_color;
+}
+.frame_1_text .block_text b{
+    color: #F16D7F;
+}
+
+
+
+/*///////OLD//////*/
+@standart_color #222222;
+
+*{
+    font-family: Lato;
+}
+
 .clearfix{
     content: "";
     display: block;
@@ -25,40 +172,9 @@
 body{
     background-size: 100%;
 	background-color: #E5E5E5;
-	width:@width; /* Ширина блока*/
-    height: 100%;
+	height: 100%;
     margin: 0;
     padding: 0;
-}
-
-nav {
-	background-color: black;
-	padding-left: 15%;
-    padding-right: 15%;
-	height: 70px;
-}
-nav .nav_left{
-    float: left;
-    padding-top:14px;
-}   
-nav .nav_left a{
-    padding-right: 35px;
-}
-
-.nav_right{
-    float: right;
-    padding-top:24px;
-}
-.nav_right .menu_a{   
-    display:block;
-    float: right;
-    font-size:16px;
-    line-height: 30px;
-    text-decoration:none;
-    margin-right: 20px;
-}	
-.icon_padding{
-    padding-top:4px;
 }
              
 /*////////////////////*/
@@ -112,21 +228,6 @@ nav .nav_left a{
 }
 /*////////////////////*/
                 
-                
-
-section{
-    position: relative;
-    clear: both;   
-}
-
-.content{
-    width:100%;
-    position: relative;
-}
-.frame_1{
-    width: @width;
-    background-color: #F1E4E6 ;
-}
 .frame_1 img{
     float: left;
     width:50%;   
@@ -176,21 +277,29 @@ section{
 
 
 .small_items{
-    position: relative;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    
     width: 100%;
-    text-align: center;
     margin-top:63px;
-    /*height: 260px; была ошибка с позиционированием нижних блоков*/    
+    
+    display: flex;
+    justify-content: center;
+    
 }
 
-.item{  
-    float:left;  
+.item{
+    margin: auto;
+    width: 100%;
     position: relative;    
-	vertical-align: top;      
-    margin-top: 0;
-    margin-bottom: 0;
-    width:30%;  
+	/*width:360px;
+    height: 260px;*/
+    
+    
 }
+
 .item_text{
     position: absolute;
     top:38%;
@@ -217,10 +326,8 @@ section{
     text-align: left;
     width: 100%;    
 }
-.product{
-    padding-right: 5%;  
-}
-.cover:before {
+
+/*.cover:before {
     content: "";
     position:absolute;
     left:0;  
@@ -230,12 +337,13 @@ section{
 }
 .cover_last:before {
     width: 100%;
-}
+}*/
 
 .big_item{
     margin-top:10px;
     position: relative;
-    width: 100%;
+    width: 90%;
+    margin: auto;
 }
 .big_item img{
     width: 100%;
@@ -565,3 +673,4 @@ button[type="submit"]{
     text-align: center;
     padding: 20%;
 }
+
