@@ -1,0 +1,155 @@
+/*Product*/
+.filters{
+    margin-top:200px; /*75px - menu, 75px - catalog_menu, 50px - space*/
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1140px;
+    display: flex;
+    justify-content: space-between;
+}
+.filter{
+    width:200px;
+    display: flex;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: #000000;
+}
+.filter img{
+    margin-left:11px;
+}
+.filter p{
+    margin: 0;
+}
+.filter a{
+    display: flex;
+    text-decoration: none;
+    color: gray;
+}
+.filter a:hover{
+    color: inherit;
+}
+
+
+
+.frame_products_feauture{
+    position: relative;
+    margin: 0;
+}
+
+.frame_products{
+    margin-top: 35px;
+    
+}
+
+.pagination{
+    margin: 0;
+    margin-top: 48.5px;
+    margin-bottom: 96.5px;
+}
+.pagination li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.page-link{
+    border: 0px solid #dee2e6;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;   
+}
+.page-link img{
+    height:15px;
+    
+}
+.pagination a{
+    color:#dee2e6;
+}
+.page-link svg{
+    fill:#222222;
+}
+.page-link:hover svg{
+    fill:#EF5B70;
+}
+.page-link:hover{
+    color:#EF5B70;
+}
+
+.filter .dropdown{
+    margin-left: 0;
+}
+.filter .dropdown:after{
+    content: "";
+}
+
+
+
+.filter_menu{
+    position: absolute;
+    width: 360px;
+    position: absolute;
+    background-color: white;
+    border: 1px black;
+    margin-top:-100px;
+    
+}
+.filter_menu h2{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+.filter_menu .category{
+    display: flex;
+    margin-left:17px;
+    justify-content: flex-start;
+}
+.left_pink_block{
+    width:5px;
+    height:37px;
+    display: flex;
+    background-color: #EF5B70;
+    color: #EF5B70;
+    text-transform: uppercase;
+}
+.menu_work_space{
+    list-style-type: none;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 24px;
+}
+.menu_work_space li{
+    margin-top:11px;
+}
+.menu_work_space h2{
+    height:37px;
+    display: flex;
+    text-transform: uppercase;
+    color: #EF5B70;
+}
+.menu_work_space{
+    margin-left:11px;
+}
+
+@media (min-width:0px) and (max-width:400px){
+    .work_space .filters .frame_offer .work_space .filters .dropdown_block .filter_menu .filters{
+        width: 600px;
+    }
+    .dropdown_main{
+        margin-right: 0;
+        align-items: flex-end;
+	    justify-content: flex-end;
+    }
+}
+
+@media (min-width:400px) and (max-width:1130px){  
+    .work_space .filters .frame_offer .work_space .filters .dropdown_block .filter_menu .filters{
+        width: 600px;
+    }
+    .filter_menu .dropdown_main{
+        width: 300px;
+    }
+    .dropdown_main{
+        margin-right: 0;
+        align-items: flex-end;
+	    justify-content: flex-end;
+    }
+}
